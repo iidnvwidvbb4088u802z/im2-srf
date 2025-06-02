@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <title>Dein Radio SRF 1 Song Tracker</title>
+</head>
+<body>
+    <main>
+        <h1> 
+            Dein Radio SRF 1 Song Tracker
+        </h1>
+        <section>
+            <div class="currentsong_coverimg" id="coverContainer">
+                <img src="img/Musiknote_Figma.png" alt="Musiknote">
+            </div>
+            <h2>Jetzt läuft:</h2>
+            <div class="currentsong_metadata" id="nowPlaying">
+                <h3>Titel</h3>
+                <p id="song-title">Lade Titel...</p>
+                <h3>Künstler*in</h3>
+                <p id="song-artist">Lade Künstler*in...</p>
+                <h3>Länge des Songs</h3>
+                <p id="song-length">Lade Länge...</p>
+            </div>
+            <button class="buttonone" onclick="window.location.href='https://www.srf.ch/audio/radio-srf-1-live-hoeren'">
+                Webradio
+            </button>
+        </section>
+        <section>
+            <h2>Die letzten gespielten Songs</h2>
+            <section class="history-section">
+                <button onclick="window.location.href='history.html'" class="buttontwo">
+                    Historie
+                </button>
+            </section>
+        </section>
+        <section>
+            <h2>Das SRF 1 Song Quiz</h2>
+            <section class="history-section">
+                <button onclick="window.location.href='quiz.html'" class="buttontwo">
+                    Quiz
+                </button>
+            </section>
+        </section>
+    </main>
+    <script>
+        // Musiknoten-Animation erzeugen
+        function createNote() {
+            const note = document.createElement('div');
+            note.classList.add('note');
+            note.style.left = Math.random() * 60 + 20 + '%';
+            note.style.top = '80%';
+            document.getElementById('coverContainer').appendChild(note);
+
+            setTimeout(() => {
+                note.remove();
+            }, 3000);
+        }
+
+        setInterval(createNote, 800);
+    </script>
+    <script src="js/script.js"></script>
+</body>
+<footer class="footer">
+    <img src="img/Logo_of_Radio_SRF_1.svg.png" alt="Logo_Radio_SRF_1" class="footer-image left">
+    <div class="footer p">
+        <p>Ein Projekt für das Modul <br>Interaktive Medien II<br><strong>Von Christian Steitz</strong></p>
+    </div>
+    <img src="img/LOGO_FHGR.png" alt="LOGO_FHGR" class="footer-image right">
+</footer>
+</html>

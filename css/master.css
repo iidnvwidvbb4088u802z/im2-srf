@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Jura;
+
+}
+
+body {
+    background: #C70627;
+}
+
+main {
+    padding: 30px;
+    border-radius: 17px;
+    background: #AF001E;
+    box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.25); 
+    margin: 50px auto;
+    width: 90vw;
+    max-width: 800px;
+    height: auto;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+
+.jura-uniquifier {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: var(--type-type-size-h3, 32px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    border-radius: 17px;
+    display: flex;
+    background: #FFF;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.currentsong_coverimg {
+    border-radius: 17px;
+    background: #F5F5F5;
+    margin-top: 26px;
+    width: 142px;
+    height: auto;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.currentsong_coverimg img {
+    margin: 5%;
+    width: 90%;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    font-family: Jura;
+    font-size: var(--type-type-size-h4, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px;
+}
+.currentsong_metadata {
+    padding: 20px;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    background: #F5F5F5;
+    align-content: center;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 300px;
+  }
+
+.currentsong_metadata h3 {
+    margin-bottom: 0px;
+    color: #AF001E;
+    text-align: center;
+    font-family: Jura;
+    font-size: var(--type-type-size-Body-2, 15px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.currentsong_metadata p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+    font-family: Jura;
+    font-size: var(--type-type-size-Body-1, 22px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttonone {
+background-color: #AF001E;
+border: solid 2px #AF001E;
+padding: 20px 50px;
+font-size: 24px;
+color: #FFFFFF;
+font-family: Jura;
+border-radius: 17px;
+margin-top: 29px;
+margin-bottom: 30px;
+}
+
+.radio-player {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.buttontwo {
+    background-color: #AF001E;
+    border: solid 2px #AF001E;
+    padding: 20px 50px;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: Jura;
+    border-radius: 17px;
+    }
+
+button:hover {
+    background-color: #FFFFFF;
+    color: #AF001E;
+}
+
+.startseite {
+    background-color: #FFFFFF;
+    border-radius: 17px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .currentsong_coverimg {
+      position: relative;
+      animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+  }
+
+  .note {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-image: url('../img/Musiknote_Figma.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.8;
+      animation: flyNote 3s ease-out forwards;
+  }
+
+  @keyframes flyNote {
+      0% { transform: translateY(0) scale(1); opacity: 0.8; }
+      100% { transform: translateY(-150px) scale(0.5); opacity: 0; }
+  }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFFFFF;
+        color: white;
+        padding: 20px 40px;
+      }
+      
+      .footer-image {
+        height: 70px;
+      }
+      
+      .footer-text {
+        text-align: center;
+        flex-grow: 1;
+      }
+
+    .footer p {
+        margin-top: 0px;
+        color: #000;
+        text-align: center;
+        font-family: Jura;
+        font-size: var(--type-type-size-Body-1, 15px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    #historyContainer {
+      width: 100%;
+    }
+    #quiz-section {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background-color: #F5F5F5;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        width: 80%;
+      }
+      
+      .quiz-button {
+        margin: 10px 0;
+        font-size: 1rem;
+        background-color: #AF001E;
+        border: solid 2px #AF001E;
+        padding: 20px 50px;
+        font-size: 24px;
+        color: #FFFFFF;
+        font-family: Jura;
+        border-radius: 17px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        display: block;
+        width: 100%;
+      }
+
+      .quiz-button:hover {
+          background-color: #FFFFFF;
+          color: #AF001E;
+      }
+
+      .quiz-button[disabled]:hover {
+        background-color: #AF001E;
+        color: #FFFFFF;
+      }
+  
